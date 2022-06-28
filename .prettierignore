@@ -1,0 +1,4 @@
+.devcontainer
+.next
+build
+node_modules

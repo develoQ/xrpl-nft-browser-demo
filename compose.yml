@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: xrpl-nft-demo
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: /bin/sh -c "while :; do sleep 10; done"
+    volumes:
+      - .:/app/
+      - /app/node_modules
+      - ~/.ssh:/root/.ssh
+      - ~/.gitconfig:/root/.gitconfig
